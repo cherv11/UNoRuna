@@ -1,0 +1,39 @@
+{
+  "id": 3,
+  "name": "Azel",
+  "unit_class": "summon",
+  "element": "dark",
+  "stats": {
+    "hp": 1200,
+    "mana": 1000,
+    "dmg": "50n100d",
+    "armor": "15n25d",
+    "speed": 8,
+    "size": (1,2),
+    "attack_speed": 100,
+    "accuracy": 100,
+    "sight": 10,
+    "multishot": 1
+  },
+  "melee": False,
+  "attack": {
+    "projectile": "orb.png",
+    "speed": 20,
+    "size": (30,30),
+    "spawn_offset": (0,-1),
+    "attack_frame": 40,
+    "top_angle": 90,
+    "bottom_angle": -45,
+    "destroybyMapCollisions": 1,
+    "stopbyMapCollisions": 1,
+    "destroybyUnitCollisions": 3,
+    "stopbyUnitCollisions": 3,
+    "destroyAnimation": "orbDestroy"
+  },
+  "canfly": True,
+  "game_name": "Azel",
+  "game_desc": "",
+  "abilities": [
+	["AbilityAzelCurse", 0, 0, 0, 'No', 'orb', 0]
+  ],
+}

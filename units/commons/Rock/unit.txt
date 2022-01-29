@@ -1,0 +1,32 @@
+{
+  "id": 4,
+  "name": "Rock",
+  "unit_class": "common",
+  "hero_class": "warrior",
+  "element": "earth",
+  "stats": {
+    "hp": 1000,
+    "mana": 500,
+    "dmg": "80n20e",
+    "armor": "30n",
+    "speed": 7,
+    "size": (1,1),
+    "attack_speed": 100,
+    "accuracy": 80,
+    "sight": 10,
+    "multishot": 1
+  },
+  "melee": True,
+  "attack": {
+    "projectile": "sword.png",
+    "radius": 1,
+    "spawn_offset": (0,-1),
+    "top_angle": 90,
+    "bottom_angle": -45
+  },
+  "require_level": 0,
+  "require_player_level": 0,
+  "game_name": "Rock",
+  "game_desc": "",
+  "drop": {"rock": '0-3'}
+}

@@ -1,0 +1,64 @@
+{
+  "id": 1,
+  "name": "Zalgo",
+  "unit_class": "hero",
+  "hero_class": "disabler",
+  "element": "dark",
+  "stats": {
+    "hp": 800,
+    "mana": 1000,
+    "dmg": "25n75d",
+    "armor": "10n25d",
+    "speed": 8,
+    "size": (1,2),
+    "attack_speed": 100,
+    "accuracy": 100,
+    "sight": 10,
+    "multishot": 1
+  },
+  "melee": False,
+  "attack": {
+    "projectile": "orb.png",
+    "speed": 20,
+    "size": (0.5,0.5),
+    "spawn_offset": (0,-1),
+    "attack_frame": 40,
+    "top_angle": 90,
+    "bottom_angle": -45,
+    "ricochetbyMapCollisions": 3,
+    "ricochetbyUnitCollisions": 2,
+    "destroybyUnitCollisions": 3,
+    "stopbyUnitCollisions": 3,
+    "destroyAnimation": "orbDestroy",
+  },
+  "require_level": 0,
+  "require_player_level": 0,
+  "game_name": "Zalgo",
+  "game_desc": "",
+  "abilities": [
+	["AbilityDevilsEye", 10, 1, 1, 'cast1', 'targetpoint', 100],
+	["AbilityEnchantedWritings", 15, 1, 0.9, 'cast2', 'targetpoint', 300],
+	["AbilityForbiddenWord", 0, 0, 0, 'cast3', 'passive', 0],
+	["AbilitySummonSorcery", 30, 1, 1, 'cast4', 'notarget', 500]
+  ],
+  "astats": {
+    "strength": 1,
+    "radius": 1,
+    "aduration": 1,
+    "manacost": 1,
+    "castspeed": 1,
+    "reduction": 1,
+    "super": 1
+  },
+  "particles": [
+	{
+	'name': 'zalgo',
+	'single': True,
+	'changexy': 'lambda o,x,y,i: (x, y-i//100)',
+	'spawn': 0.05,
+	'random_offset': (-20, 20, -80, -40),
+	'random_scale': (0.2, 0.4),
+ 	'random_speed': (0.02, 0.04)
+	}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": 2,
+  "name": "Devil's Eye",
+  "unit_class": "summon",
+  "hero_class": "disabler",
+  "element": "dark",
+  "stats": {
+    "hp": 300,
+    "mana": 100,
+    "dmg": "0",
+    "armor": "2n25d",
+    "speed": 8,
+    "size": (1,1),
+    "attack_speed": 100,
+    "accuracy": 100,
+    "sight": 10,
+    "multishot": 100
+  },
+  "melee": False,
+  "canattack": False,
+  "canbecontrolled": False,
+  "canfly": True,
+  "game_name": "Devil's Eye",
+  "game_desc": "",
+  "abilities": [
+	["AbilityDevilAura", 0, 0, 0, 'No', 'passive', 0]
+  ],
+}
